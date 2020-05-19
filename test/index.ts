@@ -1,5 +1,5 @@
 import ava from 'ava';
-import { Products, fetchData, craftURL } from '../dist';
+import { Products } from '../dist';
 
 ava('every product returns a number', (test): void => {
 	const products = Object.values(Products);
