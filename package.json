@@ -15,7 +15,7 @@
         "docs": "typedoc --plugin typedoc-plugin-markdown --out docs"
     },
     "keywords": [],
-    "author": "dirigeants",
+    "author": "Carter 'Fyko' Himmel",
     "license": "MIT",
     "engines": {
         "node": ">=10.1.0"
@@ -35,10 +35,6 @@
         "typedoc": "^0.17.7",
         "typedoc-plugin-markdown": "^2.2.17",
         "typescript": "^3.9.2"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/dirigeants/util"
     },
     "ava": {
         "extensions": [
