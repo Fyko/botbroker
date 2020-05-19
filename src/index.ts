@@ -72,6 +72,7 @@ export async function fetchData(url: string): Promise<APIResponse> {
  * const data = await fetchLatest('CYBERSOLE');
  * const total = data.reduce((all, { amount }) => (all += amount), 0);
  * console.log(total / data.length);
+ * ```
  */
 export async function fetchLatest(product: Product, type: 'renewal' | 'lifetime' = 'renewal', days = 365): Promise<Sale[]> {
 	const id = Products[product];
