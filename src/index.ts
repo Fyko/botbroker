@@ -67,6 +67,11 @@ export async function fetchData(url: string): Promise<APIResponse> {
  * @param product The product to fetch
  * @param type The subscription type of the product, "renewal" or "lifetime"
  * @param days How many days back to fetch sales
+ * @example
+ * ```ts
+ * const data = await fetchLatest('CYBERSOLE');
+ * const total = data.reduce((all, { amount }) => (all += amount), 0);
+ * console.log(total / data.length);
  */
 export async function fetchLatest(product: Product, type: 'renewal' | 'lifetime' = 'renewal', days = 365): Promise<Sale[]> {
 	const id = Products[product];
