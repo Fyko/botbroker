@@ -331,7 +331,13 @@
 								"isExported": true
 							},
 							"comment": {
-								"shortText": "Fetches the latest sales of a BotBroker product"
+								"shortText": "Fetches the latest sales of a BotBroker product",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "\n```ts\nconst data = await fetchLatest('CYBERSOLE');\nconst total = data.reduce((all, { amount }) => (all += amount), 0);\nconsole.log(total / data.length);\n"
+									}
+								]
 							},
 							"parameters": [
 								{
@@ -386,7 +392,7 @@
 										"isExported": true
 									},
 									"comment": {
-										"text": "How many days back to fetch sales\n"
+										"text": "How many days back to fetch sales"
 									},
 									"type": {
 										"type": "intrinsic",
@@ -414,7 +420,7 @@
 					"sources": [
 						{
 							"fileName": "index.ts",
-							"line": 71,
+							"line": 76,
 							"character": 33
 						}
 					]
