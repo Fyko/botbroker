@@ -1,6 +1,6 @@
 {
     "name": "@fyko/botmart",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "a package to aide in pulling botmart product prices",
     "main": "dist/index.js",
     "scripts": {
@@ -35,6 +35,10 @@
         "typedoc": "^0.17.7",
         "typedoc-plugin-markdown": "^2.2.17",
         "typescript": "^3.9.2"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/fyko/botmart"
     },
     "ava": {
         "extensions": [
